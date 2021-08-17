@@ -2,5 +2,11 @@ using Beep
 using Test
 
 @testset "Beep.jl" begin
-    # Write your tests here.
+    @testset "resources" begin
+    end
+
+    @testset "functions" begin
+        @test beep(:boing) === nothing
+        @test beep(:back) === nothing
+    end
 end
