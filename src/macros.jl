@@ -20,7 +20,7 @@ macro beep(ex, sound)
     return quote
         try
             local res = $(esc(ex))
-            esc(beep($sound))
+            beep($sound)
             return res
         catch
             beep(default_error)
