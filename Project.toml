@@ -3,6 +3,9 @@ uuid = "a0a4fb26-8896-49e9-8ac1-323c2c7b1d7b"
 authors = ["Bence Komarniczky"]
 version = "0.1.0"
 
+[deps]
+WAV = "8149f6b0-98f6-5db9-b78f-408fbbb8ef88"
+
 [compat]
 julia = "1"
 
