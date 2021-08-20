@@ -3,16 +3,16 @@ const default_error = :blip
 
 
 macro beep(ex)
-    return quote
+    esc(quote
         try
-            local res = $(esc(ex))
-            beep(default_sound)
+            res = $ex
+            beep(:boing)
             return res
         catch
-            beep(default_error)
+            beep(:blip)
             rethrow()
         end
-    end
+    end)
 end
 
 
