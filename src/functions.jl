@@ -10,6 +10,8 @@ function beep(sound::Symbol)::Nothing
     beep(sound_to_play)
 end
 
+beep() = beep(:boing)
+beep_error() = beep(:blip)
 
 function load_sound(fname::String)::Tuple{Matrix{<:AbstractFloat}, <:AbstractFloat}
     raw_wav = wavread(fname)
